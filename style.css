@@ -1,0 +1,157 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family: 'poppins','roboto';
+    height: 100vh;
+    background-image: linear-gradient(to bottom, rgb(51, 0, 65)5%,black 95%);
+    
+}
+
+
+nav {
+    position: fixed; /*because the nav dont let the image be in the full screen */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    width: 100%; /* to make to its original*/
+    z-index: 10; /* on top of everything so the hover will work*/
+}
+nav h1{
+    color: white;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin-left: 20px;
+    
+}
+nav h1 span {
+    color: red;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    margin-top: 5px;
+    margin-right: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    
+    margin-right: 40px;
+    border-radius: 2px;
+    
+
+}
+nav ul li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color:white;
+    border-radius: 15px;
+    transition: all 0.5s ease;
+}
+nav ul li a:hover{
+    color: black;
+    
+    padding: 3px 10px 3px 10px ;
+    border-radius: 15px;
+    background-color: white;
+    font-weight: 900;
+}
+nav ul li #home{
+    color: black;
+    
+    padding: 3px 10px 3px 10px ;
+    border-radius: 15px;
+    background-color: white;
+    font-weight: 900;
+}
+
+.container{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+}
+.container::after{
+    content: '';
+    height: 50px;
+    width: 100%;
+    background: blue;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(to top,rgb(53, 2, 67)2%,transparent 100%);
+    
+
+}
+.container #nou{
+    color: white;
+    transform: translateY(-200px);
+}
+.container img{
+    position: absolute;
+    width: 100%; /* the images will be on top of each other*/
+    height: 100vh;/*the height will ruin the moon that why we use object fit */
+    object-fit: cover;
+}
+#moon{
+    mix-blend-mode: screen; /* delete the blackness of the moon somehow*/
+    transform: translateY(80px);
+}
+
+div h2{
+    color: white;
+    margin: 20px;
+}
+
+div p{
+    color: white;
+    margin: 20px;
+    padding: 10px;
+}
+div{
+    padding: 30px;
+}
+#mool{
+    
+    color: white;
+    z-index: 0;
+    position: absolute;
+    right: -450px;
+    transform: translateY(50px);
+    font-weight: 900;
+    font-size: 80px;
+}
+button{
+   
+   position: absolute;
+   top: 65%;
+   z-index: 2;
+   padding: 5px 15px 5px 15px;
+   border-radius: 20px;
+   border: transparent;
+   font-size: larger;
+   transition: all ease 0.5s;
+   
+  
+}
+button:hover{
+    box-shadow: 0px 0px 30px 2px  rgb(101, 101, 255);
+    
+}
+:root{
+    --primery:linear-gradient(to bottom,rgb(255, 20, 20),transparent);
+}
+
+
+ 
